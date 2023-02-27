@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function hi()
+         {
+            let n=document.getElementById("nom").value;
+            let a=document.getElementById("age").value;
+            console.log("le nom est "+n+" l'age est "+a);
+            console.log(a>18);
+
+            alert('hello '+n);
+         }
+
+    </script>
+</head>
+<body>
+    <input name="nom" id="nom">
+    <input name="age"type="number" id="age">
+    <button onClick="hi()">say hello</button>
+</body>
+</html>
