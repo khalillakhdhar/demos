@@ -10,21 +10,29 @@
          {
             let n=document.getElementById("nom").value;
             let a=document.getElementById("age").value;
+            let p=document.getElementById("poid").value;
+            let t=document.getElementById("taille").value;
             console.log("le nom est "+n+" l'age est "+a);
-            if(a>=18)
+            const imc=p/(t*t);
+            alert("votre imc est: "+imc);
+          /*  if(a>=18)
             alert("vous êtes majeur!")
             else
             alert("vous êtes mineur!")
 
 
             alert('hello '+n);
+            */
          }
 
     </script>
 </head>
 <body>
-    <input name="nom" id="nom">
-    <input name="age"type="number" id="age">
+   nom: <input name="nom" id="nom"><br>
+    age<input name="age"type="number" id="age"><br>
+    poids<input name="poid"type="number" id="poid"><br>
+    taille<input name="taille" type="number" id="taille"><br>
+
     <button onClick="hi()">say hello</button>
 </body>
 </html>
